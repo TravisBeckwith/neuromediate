@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuromediate"
+version = "0.1.0"
+description = "Neuroimaging mediation analysis: ROI-level, voxelwise, and along-tract"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "Travis Beckwith"}]
+keywords = [
+    "neuroimaging", "mediation", "fMRI", "diffusion MRI", "DTI",
+    "neuroscience", "statistics", "bootstrap", "brain-behavior",
+    "environmental neuroscience",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+    "pandas>=1.3",
+]
+
+[project.optional-dependencies]
+neuroimaging = ["nibabel>=3.0", "nilearn>=0.9"]
+parallel     = ["joblib>=1.0"]
+plotting     = ["matplotlib>=3.4"]
+full         = ["nibabel>=3.0", "nilearn>=0.9", "joblib>=1.0", "matplotlib>=3.4"]
+dev          = ["pytest>=7.0", "pytest-cov", "flake8", "black"]
+
+[project.urls]
+Homepage   = "https://github.com/travbeckwith/neuromediate"
+Repository = "https://github.com/travbeckwith/neuromediate"
+Issues     = "https://github.com/travbeckwith/neuromediate/issues"
+
+[tool.setuptools.packages.find]
+include = ["neuromediate*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
