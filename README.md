@@ -249,7 +249,7 @@ tract_results_to_dataframe(result) → pd.DataFrame
 @software{neuromediate,
   author  = {Beckwith, Travis},
   title   = {NeuroMediate: Neuroimaging Mediation Analysis Toolkit},
-  url     = {https://github.com/travbeckwith/neuromediate},
+  url     = {https://github.com/travisbeckwith/neuromediate},
   version = {0.1.0},
 }
 ```
