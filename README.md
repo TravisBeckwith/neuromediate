@@ -1,4 +1,6 @@
-# NeuroMediate [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20088336.svg)](https://doi.org/10.5281/zenodo.20088336)
+# NeuroMediate 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20088336.svg)](https://doi.org/10.5281/zenodo.20088336)
 
 **Neuroimaging mediation analysis toolkit** — test whether brain measures mediate exposure–behaviour relationships.
 
